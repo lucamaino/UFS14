@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>EnglishPro - Corso di Inglese Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        .header {
+            background-color: #8e24aa;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            background-image: linear-gradient(135deg, #8e24aa 0%, #6a1b9a 100%);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: #fff;
+            color: #8e24aa;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2),
+                       0 1px 3px rgba(0, 0, 0, 0.1);
+            text-shadow: 0 1px 1px rgba(142, 36, 170, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05) translateY(-2px);
+            background-color: #f3e5f5;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3),
+                       0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: #1e1e1e;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            flex: 1;
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 1rem;
+            fill: #8e24aa;
+        }
+
+        .testimonials {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #8e24aa;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: #1e1e1e;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .form-section {
+            background: #8e24aa;
+            padding: 4rem 2rem;
+            color: white;
+            background-image: linear-gradient(135deg, #8e24aa 0%, #6a1b9a 100%);
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            background: #f3e5f5;
+        }
+
+        .submit-button {
+            background-color: white;
+            color: #8e24aa;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2),
+                       0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit-button:hover {
+            transform: scale(1.02) translateY(-2px);
+            background-color: #f3e5f5;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3),
+                       0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .price-tag {
+            font-size: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+            color: #8e24aa;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Il resto del codice HTML rimane invariato -->
+    <header class="header">
+        <h1>Impara l'inglese con i migliori</h1>
+        <p>Corso online completo con docenti madrelingua, disponibili 24/7</p>
+        <a href="#form" class="cta-button">Prova Gratuita di 1 Mese</a>
+    </header>
+
+    <div class="price-tag">
+        Solo €14,90 al mese
+    </div>
+
+    <section class="features">
+        <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+            <h3>Docenti Madrelingua</h3>
+            <p>Chat diretta con insegnanti qualificati pronti ad aiutarti</p>
+        </div>
+        <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24">
+                <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+            </svg>
+            <h3>Lezioni Online</h3>
+            <p>Accedi alle lezioni quando vuoi, da qualsiasi dispositivo</p>
+        </div>
+        <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24">
+                <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+            </svg>
+            <h3>Guide Scaricabili</h3>
+            <p>Materiale didattico sempre a portata di mano</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Le esperienze dei nostri studenti</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Ho raggiunto il livello B2 in soli 6 mesi. I docenti sono fantastici e sempre disponibili!"</p>
+                <strong>- Marco R., 28 anni</strong>
+            </div>
+            <div class="testimonial-card">
+                <p>"Finalmente ho superato il colloquio di lavoro in inglese che tanto desideravo. Grazie mille!"</p>
+                <strong>- Laura B., 31 anni</strong>
+            </div>
+            <div class="testimonial-card">
+                <p>"Le guide scaricabili sono utilissime per ripassare. Un metodo davvero efficace."</p>
+                <strong>- Giovanni M., 25 anni</strong>
+            </div>
+            <div class="testimonial-card">
+                <p>"La flessibilità del corso online mi ha permesso di studiare nonostante i turni di lavoro."</p>
+                <strong>- Sofia P., 29 anni</strong>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="form">
+        <div class="form-container">
+            <h2>Inizia la tua prova gratuita</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="cognome">Cognome</label>
+                    <input type="text" id="cognome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <button type="submit" class="submit-button">Inizia Ora</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
